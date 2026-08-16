@@ -82,9 +82,9 @@ product_data = {
 if st.button("Predict", type="primary"):
 
     response = requests.post(
-        "YOUR_CODESPACE_BACKEND_URL/v1/predict",
-        json=product_data
-    )
+    "https://bookish-space-halibut-wrwvqgx49wjf9jv9-7860.app.github.dev/v1/predict",
+    json=product_data
+)
 
     if response.status_code == 200:
         result = response.json()
