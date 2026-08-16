@@ -97,4 +97,5 @@ if st.button("Predict", type="primary"):
     else:
        
         st.error(f"Error in API request: {response.status_code}")
-        st.write(response.text)
+        st.error(f"Error: {response.text}")
+      
